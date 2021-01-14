@@ -1,0 +1,38 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	background: linear-gradient(blue, navy, blue);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.container {
+	background: linear-gradient(#dddddd, #eeeeee, #dddddd);
+	border: 1px outset black;
+	padding-bottom: 25px;
+}
+
+.footer {
+	right: 60px;
+	bottom: 30px;
+	position: fixed;
+}
+
+.footer-content:hover {
+	animation: pana-jump 1s infinite;
+	/*
+	animation-name: pana-jump;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	*/
+}
+
+@keyframes pana-jump {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
