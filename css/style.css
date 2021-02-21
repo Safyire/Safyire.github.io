@@ -16,6 +16,45 @@ body {
 	padding-bottom: 25px;
 }
 
+.main-header {
+	background: linear-gradient(to right, #dddddd, gray);
+	border: 1px solid black;
+	padding: 3px;
+	color: #000000;
+}
+
+.main-header-text {
+	position: relative;
+	left: 10px;
+	text-align: center;
+}
+
+.navebar {
+	background: linear-gradient(to right, #dddddd, gray);
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+	margin: 10px;
+}
+
+.main-content-l {
+	background: linear-gradient(to right, #dddddd, gray);
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.main-content-m {
+	background: linear-gradient(to right, #dddddd, gray);
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.main-content-r {
+	background: linear-gradient(to right, #dddddd, gray);
+	border: 1px solid black;
+	padding: 5px;
+}
+
 .footer {
 	right: 60px;
 	bottom: 30px;
@@ -23,16 +62,10 @@ body {
 }
 
 .footer-content:hover {
-	animation: pana-jump 1s infinite;
-	/*
-	animation-name: pana-jump;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	*/
+	animation: pana-jump 2s infinite;
 }
 
 @keyframes pana-jump {
-	from {transform: rotate(0deg);}
-	to {transform: rotate(360deg);}
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
 }
